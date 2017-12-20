@@ -1,0 +1,29 @@
+{
+  "name": "wedding-node",
+  "version": "0.0.1",
+  "description": "wedding node ",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkxiansheng/wedding-node.git"
+  },
+  "keywords": [
+    "node",
+    "mongodb",
+    "api"
+  ],
+  "author": "mk先生",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkxiansheng/wedding-node/issues"
+  },
+  "homepage": "https://github.com/mkxiansheng/wedding-node#readme",
+  "devDependencies": {
+    "connect-mongo": "^2.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6"
+  }
+}

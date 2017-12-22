@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  port: 4000,
+  port: 80,
   session: {
     secret: 'wedding',
     key: 'wedding',

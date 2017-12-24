@@ -14,5 +14,8 @@ module.exports = function (app) {
 	// 婚礼详情
 	app.use('/weddingDesc', require('./wedding/wedding-desc'));
 	// 婚礼弹幕
-	app.use('/weddingDescDanMu', require('./wedding/wedding-desc-danmu.js'));
+	app.use('/weddingDescDanMu', require('./wedding/wedding-desc-danmu'));
+	// 添加弹幕
+	app.use('/addDanmu', require('./wedding/add-danmu'));
+
 };

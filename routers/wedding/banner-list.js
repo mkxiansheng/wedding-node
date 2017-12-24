@@ -12,15 +12,15 @@ router.get('/', function(req, res) {
 		Json: [{
             id: '00000001',
             index: 0,
-            img: '../../public/banner.jpg'
+            img: 'banner/banner-1.jpg'
           }, {
             id: '00000002',
             index: 1,
-            img: '../../public/newlover.png'
+            img: 'banner/banner-2.jpg'
           }, {
             id: '00000003',
             index: 2,
-            img: '../../public/banner.jpg'
+            img: 'banner/banner-3.png'
         }]
 	}
 	res.send(ret);

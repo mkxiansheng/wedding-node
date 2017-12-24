@@ -31,6 +31,9 @@ app.use(session({
   })
 }));
 
+// 托管静态资源
+app.use(express.static('public'));
+
 routers(app);
 
 app.listen(config.port);

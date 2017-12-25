@@ -14,6 +14,12 @@ const routers = require('./routers');
 
 const app = express();
 
+// 环境判断
+const isDev = process.env.NODE_ENV === "development";
+if (isDev) {
+
+}
+
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true })); 

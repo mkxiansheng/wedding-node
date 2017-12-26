@@ -1,6 +1,10 @@
 "use strict";
 
 module.exports = function (app) {
+	
+        app.get('/api/wedding', function (req, res) {
+                res.send('api wedding');
+        });
 	app.get('/', function (req, res) {
 		res.send('hello world');
 	});

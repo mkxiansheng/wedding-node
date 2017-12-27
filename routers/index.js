@@ -1,9 +1,7 @@
 "use strict";
 
 module.exports = function (app) {
-	let url = (process.env.NODE_ENV === "development") ? '' : '/api/wedding';
-	console.log(url);
-    app.get(url + '/api/wedding', function (req, res) {
+    app.get('/api/wedding', function (req, res) {
             res.send('api wedding');
     });
 
@@ -11,17 +9,21 @@ module.exports = function (app) {
 		res.send('hello world');
 	});
 
+	app.get('/api/wedding/test', function (req, res) {
+		res.send('test');
+	});
+
 	// 登录
-	app.use(url + '/login', require('./user/login'));
+	app.use('/login', require('./user/login'));
 	// 婚礼列表
-	app.use(url + '/weddingList', require('./wedding/wedding-list'));
+	app.use('/weddingList', require('./wedding/wedding-list'));
 	// banner列表
-	app.use(url + '/bannerList', require('./wedding/banner-list'));
+	app.use('/bannerList', require('./wedding/banner-list'));
 	// 婚礼详情
-	app.use(url + '/weddingDesc', require('./wedding/wedding-desc'));
+	app.use('/weddingDesc', require('./wedding/wedding-desc'));
 	// 婚礼弹幕
-	app.use(url + '/weddingDescDanMu', require('./wedding/wedding-desc-danmu'));
+	app.use('/weddingDescDanMu', require('./wedding/wedding-desc-danmu'));
 	// 添加弹幕
-	app.use(url + '/addDanmu', require('./wedding/add-danmu'));
+	app.use('/addDanmu', require('./wedding/add-danmu'));
 
 };

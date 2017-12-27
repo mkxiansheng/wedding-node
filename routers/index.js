@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function (app) {
-	const url = (process.env.NODE_ENV === "development") ? '' : '/api/wedding';
+	let url = (process.env.NODE_ENV === "development") ? '' : '/api/wedding';
 	console.log(url);
     app.get(url + '/api/wedding', function (req, res) {
             res.send('api wedding');

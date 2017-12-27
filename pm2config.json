@@ -5,10 +5,10 @@
 		"script"     : "app.js", // 应用入口文件
 		"max_memory_restart" : "800M", // 应用超过最大范围内存值重启设置
 		"instances"  : "max", // 应用启动实例个数
-		// "log_file"   : "/usr/local/nodejs/application/yqtrack/logs/log/app.log",  // logs 文件保存path设置
-		// "out_file"   : "/dev/null",
-		// "error_file" : "/dev/null",
-		// "pid_file"   : "/usr/local/nodejs/application/yqtrack/logs/pid/app.pid",
+		"log_file"   : "/usr/local/nodejs/application/wedding/logs/log/app.log",  // logs 文件保存path设置
+		"out_file"   : "/dev/null",
+		"error_file" : "/dev/null",
+		"pid_file"   : "/usr/local/nodejs/application/wedding/logs/pid/app.pid",
 		"combine_logs" : true,
 		"merge_logs" : true,
 		// "exec_mode"  : "cluster",  // 启动应用模式： cluster 集群 or  fork(default)

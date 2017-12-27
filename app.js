@@ -15,6 +15,7 @@ const routers = require('./routers');
 const app = express();
 
 // 环境判断
+console.log(process.env.NODE_ENV)
 const isDev = process.env.NODE_ENV === "development";
 if (isDev) {
 	console.log("development")

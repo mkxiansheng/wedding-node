@@ -17,7 +17,7 @@ const app = express();
 // 环境判断
 const isDev = process.env.NODE_ENV === "development";
 if (isDev) {
-
+	console.log("development")
 }
 
 app.use(bodyParser.json());

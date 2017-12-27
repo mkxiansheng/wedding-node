@@ -4,9 +4,9 @@
   "description": "wedding node ",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon ./app --config nodemon.json",
+    "dev": "set NODE_ENV=development && nodemon app.js --config nodemon.json",
     "server": "set NODE_ENV=build_server&& pm2 start pm2config.json",
-    "centos": "export NODE_ENV=build_centos&& pm2 start pm2config.json"
+    "centos": "set NODE_ENV=build_centos&& pm2 start pm2config.json"
   },
   "repository": {
     "type": "git",

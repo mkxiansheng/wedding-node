@@ -11,41 +11,11 @@ router.get('/', function(req, res) {
 		code: 0,
 		Json: [{
             id: '00000001',
-            name: '汪峰和章子怡的婚礼',
+            name: '叶先生和郑女士的婚礼',
             time: 1514692800000,
             locat: '天上人间',
             img: 'loves/newlover.png'
-          },{
-            id: '00000002',
-            name: '55开和uu的婚礼',
-            time: 1514692800000,
-            locat: '山水假日',
-            img: 'loves/newlover.png'
-          },{
-            id: '00000003',
-            name: '宋仲基和宋慧乔的婚礼',
-            time: 1514692800000,
-            locat: '维亚纳',
-            img: 'loves/newlover.png'
-          },{
-            id: '00000004',
-            name: '赵又廷和高圆圆的婚礼',
-            time: 1514692800000,
-            locat: '帝豪大酒店',
-            img: 'loves/newlover.png'
-          },{
-            id: '00000005',
-            name: '张杰和谢娜的婚礼',
-            time: 1514692800000,
-            locat: '尊爵大酒店',
-            img: 'loves/newlover.png'
-          },{
-            id: '00000006',
-            name: '杜海涛和沈梦辰的婚礼',
-            time: 1514692800000,
-            locat: '香格里拉大酒店',
-            img: 'loves/newlover.png'
-		}]
+          }]
 	}
 	res.send(ret);
 });
